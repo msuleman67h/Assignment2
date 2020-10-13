@@ -1,0 +1,93 @@
+/*
+ * Muhammad Suleman
+ * CS_102_201902
+ * Instructor: Giuseppe Turini
+ */
+
+/*
+ * Default css of application Ranging from table to everylabel and message box
+ */
+ 
+/*
+ * Creates application with dark theme
+ */
+.root {
+	-fx-base: #353535;
+	-fx-accent: #4A4A4A;
+}
+
+/*
+ * Sets all label to size 16px and bold
+ */
+.label {
+    -fx-font-size: 16.0px;
+    -fx-font-weight: bold;
+}
+
+/*
+ * Sets the size of columns headers to 12px
+ */
+.table-view .label {
+	-fx-font-size: 12.0px;
+}
+
+/*
+ * sets the color of message box text to green
+ */
+.messageBox {
+	-fx-font-size: 12.0px;
+    -fx-text-fill: #C3E88D;
+    -fx-font-weight: bold;
+}
+
+/*
+ * Sets the default theme to text field
+ * Used to remove red border when user enters correct data
+ */
+.text-field {
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-highlight-fill: derive(-fx-control-inner-background,-20.0%);
+    -fx-highlight-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30.0%);
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10.0%), -fx-text-box-border),
+        linear-gradient(from 0.0px 0.0px to 0.0px 5.0px, derive(-fx-control-inner-background, -9.0%), -fx-control-inner-background);
+    -fx-background-insets: 0.0, 1.0;
+    -fx-background-radius: 3.0, 2.0;
+    -fx-cursor: text;
+    -fx-padding: 0.333333em 0.583em 0.333333em 0.583em; /* 4 7 4 7 */
+    -fx-border-width: 0.0px ;
+}
+
+.text-field:focused {
+    -fx-highlight-fill: -fx-accent;
+    -fx-highlight-text-fill: white;
+    -fx-background-color: 
+        -fx-focus-color,
+        -fx-control-inner-background,
+        -fx-faint-focus-color,
+        linear-gradient(from 0.0px 0.0px to 0.0px 5.0px, derive(-fx-control-inner-background, -9.0%), -fx-control-inner-background);
+    -fx-background-insets: -0.2, 1.0, -1.4, 3.0;
+    -fx-background-radius: 3.0, 2.0, 4.0, 0.0;
+    -fx-prompt-text-fill: transparent;
+}
+/*
+Dark Material color
+scheme: "Material Darker"
+author: "Nate Peterson"
+base00: "212121"
+base01: "303030"
+base02: "353535"
+base03: "4A4A4A"
+base04: "B2CCD6"
+base05: "EEFFFF"
+base06: "EEFFFF"
+base07: "FFFFFF"
+base08: "F07178"
+base09: "F78C6C"
+base0A: "FFCB6B"
+base0B: "C3E88D"
+base0C: "89DDFF"
+base0D: "82AAFF"
+base0E: "C792EA"
+base0F: "FF5370"
+*/

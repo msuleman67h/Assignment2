@@ -1,0 +1,27 @@
+/*
+ * Muhammad Suleman
+ * CS_102_201902
+ * Instructor: Giuseppe Turini
+ */
+ 
+ /*
+  * CSS for displaying warning such as warning message or 
+  * highlight text fields with missing data
+  */
+  
+ /*
+  * Makes text red in message box
+  */
+.warningText {
+    -fx-font-size: 12.0px;
+    -fx-text-fill: #ff6e6e;
+    -fx-font-weight: bold;
+}
+
+/*
+ * Puts red border around text-fields
+ */
+.text-field {
+	-fx-border-color: #DD2867 ; 
+	-fx-border-width: 2px ;
+}
